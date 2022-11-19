@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Spotify clone</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="My logo"><span>Spotify</span></li>
+            <li><a href="http://">Home</a></li>
+            <li><a href="http://">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h3>My music list</h3>
+            <div class="songs">
+                <div class="song">
+                    <img src="headphone.jpg" alt="headphone" class="songImage">
+                    <div class="songInfo">
+                        <h2>my Song</h2>
+                        <i class="fa fa-play-circle" style="font-size:16px" id="1"></i>
+                    </div>
+                </div>
+
+                <div class="song">
+                    <img src="headphone.jpg" alt="headphone" class="songImage">
+                    <div class="songInfo">
+                        <h2>my Song</h2>
+                        <i class="fa fa-play-circle" style="font-size:16px" id="2"></i>
+                    </div>
+                </div>
+
+                <div class="song">
+                    <img src="headphone.jpg" alt="headphone" class="songImage">
+                    <div class="songInfo">
+                        <h2>my Song</h2>
+                        <i class="fa fa-play-circle" style="font-size:16px" id="3"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="range" min="0" max="100" value="0">
+        <div class="icons">
+            <div class="gifImag">
+                <img src="playing.gif" alt="myGif" id="gif" class="hideGif">
+                <h3 id="selectedSong">Let me love you</h3>
+            </div>
+            <div class="controlIcons">
+                <i class="fa fa-toggle-left" style="font-size:36px"></i>
+                <i class="fa fa-play-circle" style="font-size:36px" id="masterPay"></i>
+                <i class="fa fa-toggle-right" style="font-size:36px"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
